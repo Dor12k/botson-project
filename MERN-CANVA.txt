@@ -1,0 +1,50 @@
+npm init -y
+npm i express dotenv mongoose 
+npm i nodemon
+npm i cors 
+npm i concurrently -D
+npm create vite@latest
+
+
+npx create-react-app my-react-app 
+
+npm i react-router-dom
+npm i react-icons
+npm i react-multi-carousel --force
+npm i tailwind-scrollbar-hide
+
+npm i axios
+npm i bcrypt jsonwebtoken body-parser 
+npm i jwt-decode
+
+npm install react-hot-toast 
+
+
+npm i html-to-image
+npm i react-spinners
+npm i react-use-downloader
+
+backend
+npm i formidable
+npm i cloudinary
+
+
+ 
+
+
+
+npm i react-router-dom
+npm i react-icons
+npm i react-multi-carousel --force
+npm i tailwind-scrollbar-hide
+
+npm i axios
+npm i bcrypt jsonwebtoken body-parser 
+npm i jwt-decode
+
+npm install react-hot-toast
+
+
+  
+
+ 
