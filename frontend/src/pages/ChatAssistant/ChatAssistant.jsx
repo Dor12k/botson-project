@@ -1,12 +1,13 @@
 
+
 import React from 'react';
 
-const Index = () => {
+const ChatAssistant = () => {
     return (
         <div>
-            This is main page
+            
         </div>
     );
 };
 
-export default Index;
+export default ChatAssistant;
