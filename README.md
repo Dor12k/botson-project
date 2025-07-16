@@ -61,28 +61,6 @@ npm run dev
 
 See `project-structure.txt` for a detailed overview of the folder and file hierarchy.
 
-
-|-- frontend
-|   |-- public/
-|   |-- src/
-|   |   |-- assets/
-|   |   |-- components/Index/
-|   |   |-- pages/ChatAssistant/
-|   |   |-- pages/Dashboard/
-|   |   |-- pages/Index/
-|   |   |-- App.jsx
-|   |   |-- main.jsx
-|   |-- ...
-|
-|-- models/
-|-- routes/
-|-- server.js
-|-- .env
-|-- PROCESS.md
-|-- README.md
-
-
-
 ---
 
 ## 🚧 Project Status
