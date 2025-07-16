@@ -27,7 +27,7 @@ git clone https://github.com/Dor12k/botson-project.git
 cd botson-project
 ```
 
-### 2. Install backend dependencies
+### 2. Install server dependencies (root folder)
 
 ```bash
 npm install
@@ -48,14 +48,15 @@ cd frontend
 npm install
 ```
 
-App should now be running on http://localhost:5173
+The frontend will be running on [http://localhost:5173](http://localhost:5173)  
+and the backend (Express server) on [http://localhost:5000](http://localhost:5000)
+
 
 ### 4. Navigate to root project folder 
 
 ```bash
 cd ..
 npm run dev
-```
 
 ### 5. Project Structure
 
@@ -63,9 +64,8 @@ See `project-structure.txt` for a detailed overview of the folder and file hiera
 
 ---
 
+
 ## 🚧 Project Status
 
-This is an MVP (Minimum Viable Product) version.
-
-✅ Screen A (Dashboard) is fully implemented.  
-❌ Screen B (AI assistant) and OpenAI integration are planned but not yet completed.
+- ✅ Screen A (Dashboard) is fully implemented.
+- ❌ Screen B (AI Assistant) and OpenAI integration are planned but not yet completed.

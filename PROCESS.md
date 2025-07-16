@@ -25,6 +25,21 @@
 
 ---
 
+
+### 🎨 UI Improvements
+
+To enhance user experience and clarity, I made several improvements to the visual design:
+
+- **Header Navigation**
+  - Redesigned the `Header.jsx` component with modern layout and spacing using Tailwind CSS.
+  - Added active link highlighting using `NavLink` for better navigation awareness.
+  - Ensured responsiveness and clean appearance across different screen sizes.
+
+- **Landing Page**
+  - Used bold typography and contrasting colors to draw attention to primary actions.
+  - Buttons are styled with hover transitions for better interactivity.
+
+
 ## ✅ Current Functionality (Implemented)
 
 - **Dashboard Page (Screen A):**
