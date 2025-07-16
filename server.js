@@ -36,6 +36,8 @@ if(process.env.NODE_ENV === 'production'){
 }
 
 
+app.use('/api/transactions', require('./routes/transactionsRoutes'))
+
 
 const dbConnect = async () => {
 

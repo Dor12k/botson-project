@@ -3,7 +3,7 @@ import React from 'react';
 
 import '../../index.css'
 import Header from '../../components/Index/Header';
-import Main from '../../components/Index/Main';
+// import Main from '../../components/Index/Main';
 import { Link } from "react-router-dom";
 
 
