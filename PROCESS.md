@@ -53,12 +53,15 @@ To enhance user experience and clarity, I made several visual improvements:
   - Pie chart grouping transactions by country.
 
 - **Chat Assistant Backend:**
-  - Receives user questions via POST.
-  - Currently returns the submitted question text.
-  - Calculates and returns average `TOTAL_JOBS_SENT_TO_INDEX` per client for the past month.
-  - Prepares foundation for future OpenAI prompt integration.
+  - Receives user questions via POST and returns the submitted text.
+  - Performs a real aggregation query on MongoDB:
+    - Calculates average `TOTAL_JOBS_SENT_TO_INDEX` per client over the past month.
+  - This simulates partial backend functionality while awaiting full prompt → LLM integration.
+
 
 ---
+
+
 
 ## 🕐 Pending Work / Partial Completion
 

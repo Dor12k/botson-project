@@ -68,5 +68,11 @@ See `project-structure.txt` for a detailed overview of the folder and file hiera
 
 ## 🚧 Project Status
 
-- ✅ Screen A (Dashboard) is fully implemented.
-- ❌ Screen B (AI Assistant) and OpenAI integration are planned but not yet completed.
+- ✅ **Screen A (Dashboard)** is fully implemented.
+
+- 🟡 **Screen B (AI Assistant)** is partially implemented:
+  - The chat interface works and sends user input to the backend.
+  - The server responds with a dynamic aggregation (average jobs sent per client in the last month), as a placeholder for AI analysis.
+  - Prompt design and OpenAI API integration are outlined in `PROCESS.md` and planned for next steps.
+
+
