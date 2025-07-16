@@ -66,3 +66,6 @@ While I did not integrate an AI assistant in the app yet, I used **ChatGPT** ext
 - Understand dependency version mismatches.
 - Refactor UI layout and improve responsiveness.
 - Generate helpful component logic and improve sorting/filtering behavior.
+
+All AI-assisted code was carefully reviewed, tested, and adjusted to ensure I fully understood its behavior and structure.
+
