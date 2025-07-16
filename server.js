@@ -9,6 +9,8 @@ const cors = require('cors')
 const path = require('path')
 
 dotenv.config()
+
+app.use(cors());
 app.use(express.json())
 
 if(process.env.NODE_ENV == 'local'){
@@ -36,7 +38,16 @@ if(process.env.NODE_ENV === 'production'){
 }
 
 
+// Handel transaction request
 app.use('/api/transactions', require('./routes/transactionsRoutes'))
+
+
+// Handel chat request
+app.use('/api/chat', require('./routes/chatAssistantRoutes'))
+
+
+
+
 
 
 const dbConnect = async () => {
