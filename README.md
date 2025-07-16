@@ -57,52 +57,37 @@ cd ..
 npm run dev
 ```
 
-### 5. Project structure
+### 5. Project Structure
+
+See `project-structure.txt` for a detailed overview of the folder and file hierarchy.
 
 
 |-- frontend
-|   |-- public
-|   |   +-- vite.svg
-|   |-- src
-|   |   |-- assets
-|   |   |   +-- react.svg
-|   |   |-- components
-|   |   |   +-- Index
-|   |   |       |-- Header.jsx
-|   |   |       +-- MainLayout.jsx
-|   |   |-- pages
-|   |   |   |-- ChatAssistant
-|   |   |   |   +-- ChatAssistant.jsx
-|   |   |   |-- Dashboard
-|   |   |   |   +-- Dashboard.jsx
-|   |   |   +-- Index
-|   |   |       +-- Index.jsx
-|   |   |-- App.css
+|   |-- public/
+|   |-- src/
+|   |   |-- assets/
+|   |   |-- components/Index/
+|   |   |-- pages/ChatAssistant/
+|   |   |-- pages/Dashboard/
+|   |   |-- pages/Index/
 |   |   |-- App.jsx
-|   |   |-- index.css
-|   |   +-- main.jsx
-|   |-- .gitignore
-|   |-- eslint.config.js
-|   |-- index.html
-|   |-- package-lock.json
-|   |-- package.json
-|   |-- postcss.config.cjs
-|   |-- README.md
-|   |-- tailwind.config.cjs
-|   +-- vite.config.js
-|-- models
-|   +-- transactionModel.js
-|-- routes
-|   +-- transactionsRoutes.js
-|-- .env
-|-- .gitignore
-|-- generate-structure.ps1
-|-- package-lock.json
-|-- package.json
-|-- PROCESS.md
-|-- project-structure.txt
-|-- README.md
+|   |   |-- main.jsx
+|   |-- ...
+|
+|-- models/
+|-- routes/
 |-- server.js
-+-- transformedFeeds.json
+|-- .env
+|-- PROCESS.md
+|-- README.md
 
 
+
+---
+
+## 🚧 Project Status
+
+This is an MVP (Minimum Viable Product) version.
+
+✅ Screen A (Dashboard) is fully implemented.  
+❌ Screen B (AI assistant) and OpenAI integration are planned but not yet completed.
