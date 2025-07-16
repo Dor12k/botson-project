@@ -57,6 +57,7 @@ and the backend (Express server) on [http://localhost:5000](http://localhost:500
 ```bash
 cd ..
 npm run dev
+```
 
 ### 5. Project Structure
 
