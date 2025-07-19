@@ -14,7 +14,7 @@ This is a full-stack project for Botson.ai's take-home assignment. It includes:
 - Node.js + Express
 - MongoDB
 - Axios
-- OpenAI API (or other LLMs)
+- OpenAI API 
 
 ---
 
@@ -39,7 +39,11 @@ Create a .env file in the backend folder:
 PORT=5000
 NODE_ENV=local
 LOCAL_DB_URI=mongodb://127.0.0.1:27017/botson
+OPENAI_API_KEY="<ENTER YOUR OPENAI API KEY HERE>"
 ```
+
+🧠 Note: An OpenAI API key is required to enable the AI assistant functionality.
+You can get one at: https://platform.openai.com/account/api-keys
 
 ### 3. Install frontend dependencies
 
@@ -66,13 +70,18 @@ See `project-structure.txt` for a detailed overview of the folder and file hiera
 ---
 
 
+
 ## 🚧 Project Status
 
-- ✅ **Screen A (Dashboard)** is fully implemented.
+- ✅ **Screen A (Dashboard)** is fully implemented and functional:
 
-- 🟡 **Screen B (AI Assistant)** is partially implemented:
-  - The chat interface works and sends user input to the backend.
-  - The server responds with a dynamic aggregation (average jobs sent per client in the last month), as a placeholder for AI analysis.
-  - Prompt design and OpenAI API integration are outlined in `PROCESS.md` and planned for next steps.
+  - Fetches and displays job indexing logs from MongoDB.
+  - Includes interactive filters, pagination, and client-level insights.
 
+- ✅ **Screen B (AI Assistant)** is fully implemented:
+
+  - The chat interface sends user input to the backend and receives a summarized analysis.
+  - The backend uses OpenAI to generate responses (via `OPENAI_API_KEY` from the `.env` file).
+  - Users must provide their own API key to enable the AI assistant (see `PROCESS.md` for setup instructions).
+  - Prompt design and OpenAI API integration are already implemented and documented in `PROCESS.md`.
 
