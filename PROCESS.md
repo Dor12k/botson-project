@@ -91,7 +91,7 @@ The backend follows a multi-step strategy to handle natural language questions u
  * This will process a query that retrieves all completed transactions from 'Deal4' in July 2025
  * where the total jobs sent to index are at least 10,000.
  */
-
+```
 
 ### 1. **Check Sufficiency of Input**
 
@@ -180,7 +180,7 @@ Reply with a short, helpful message (e.g., 'No results found'). Do not mention d
 
 
 
-🛠 Design Principles
+## 🛠 Design Principles
 
 Prompt-First Flow: Every decision depends on AI feedback—whether to query or ask for clarification.
 
@@ -193,8 +193,10 @@ Post-Processing: Converts date strings to actual JavaScript Date objects before 
 Structured Response: The server always returns a unified JSON shape to simplify frontend handling.
 
 
+---
 
-🔄 Example Flow
+
+## 🔄 Example Flow
 
 User asks: "Show me jobs from Deal4 in July"
 
@@ -211,12 +213,16 @@ AI would respond: "false"
 Clarification prompt is issued: "Which time range are you interested in for Deal4?"
 
 
+---
 
 
-🧪 Final Notes
+## 🧪 Final Notes
 
 The assistant now handles unclear input, valid queries, and summary generation.
 
 Input is validated on the frontend to prevent blank or overly long questions.
 
 The system supports future model replacements (Anthropic, Azure OpenAI, etc.) due to clear API abstraction.
+
+
+---
