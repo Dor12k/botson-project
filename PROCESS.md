@@ -93,6 +93,13 @@ The backend follows a multi-step strategy to handle natural language questions u
  */
 ```
 
+
+**Note:**  
+For full details and exact wording of the prompts — including schema, examples, and specific instructions — please see the backend controller implementation in  
+`src/controllers/chatAssistantController.js`.  
+This file contains the precise prompt templates used in the production system.
+
+
 ### 1. **Check Sufficiency of Input**
 
 Prompt sent to determine if the user’s question includes enough information to generate a database query:
@@ -114,13 +121,14 @@ buildFirstPrompt(question):
   Answer: false
 
   Now evaluate: ${question}"
-
+```
 
 
 ### 2. Ask for More Info (if insufficient)
 
 If the answer to the above is false, we ask the AI to generate a follow-up clarification
 
+```js
 buildDialogPrompt(question):
   "You are an AI assistant helping a user query job indexing logs.
 
@@ -132,7 +140,7 @@ buildDialogPrompt(question):
   'Which time range are you interested in for Deal4?'
 
   Only return the question text. No explanations."
-
+```
 
 
 
@@ -140,6 +148,7 @@ buildDialogPrompt(question):
 
 If the user's question is complete, we generate a valid MongoDB query filter:
 
+```js
 buildQueryPrompt(question):
   "You are an AI assistant converting natural language into MongoDB queries.
 
@@ -150,13 +159,14 @@ buildQueryPrompt(question):
   Return just the filter. Do not include code wrappers or explanations.
 
   Use ISO date strings where needed."
-
+```
 
 
 ###  4. Summarize the Results
 
 After querying the database, we summarize the results for the user:
 
+```js
 buildAnswerPrompt(question, results):
 "You are an AI assistant. Summarize the query result based on the user’s question.
 
