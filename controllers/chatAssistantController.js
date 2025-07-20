@@ -278,7 +278,7 @@ async function executeQueryPrompt(queryString) {
         const parsedQuery = parseQueryString(queryString); // Step 1: Parse
         const transformedQuery = transformExprDates(parsedQuery); // Step 2: Transform
         const results = await transactionModel.find(transformedQuery).exec(); // Step 3: Query DB
-        console.log("results", results);
+        
         return results;
     } catch (error) {
         console.error("Failed to parse or execute query:", error);
@@ -304,7 +304,6 @@ const sendPromptToChat = async (userQuestion) => {
   
 //   return "true"
 };
-
 
 
 /**
@@ -348,13 +347,6 @@ async function handleExampleQuery(question, res) {
 
     // Step 3: Send the prompt to the AI model and receive a concise summary
     const summary = await sendPromptToChat(prompt);
-
-    // const summary = `
-    // During July 2025, multiple 'Deal4' sources submitted completed jobs, each indexing over 21,000 job entries.
-    // Many submissions included thousands of jobs with missing metadata, and some also sent jobs for enrichment.
-    // The number of indexing failures varied widely, ranging from dozens to over 3,000.
-    // Overall, the data reflects high-volume activity with fluctuating data quality and varying processing success rates.
-    // `;      
 
     // Step 4: Return the original question, summary, and raw results to the client
     return res.json({ echo: question, summary, results });
