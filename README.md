@@ -29,6 +29,14 @@ This is a full-stack project for Botson.ai's take-home assignment. It includes:
 
 ## ⚙️ Local Setup Instructions
 
+
+⚠️ Note: After switching to this branch, run:
+
+    npm install
+
+To make sure all dependencies (including 'openai') are installed.
+
+
 ### 1. Clone the repository
 
 ```bash
