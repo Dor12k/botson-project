@@ -9,10 +9,10 @@ This is a full-stack project for Botson.ai's take-home assignment. It includes:
 ## Screenshots
 
 ### Dashboard
-![Dashboard Screenshot](path/to/homepage.png)
+![Dashboard Screenshot](https://github.com/user-attachments/assets/22a0ae18-722f-4b75-974d-6391d52acd27)
 
 ### Chat Assistant
-![Chat Assistant Screenshot](path/to/query.png)
+![Chat Assistant Screenshot](https://github.com/user-attachments/assets/f2d5f12b-abd5-4217-bdd9-315d17931c60)
 
 
 ## 🧰 Technologies Used
