@@ -6,7 +6,7 @@ export default function ChatAssistant() {
   const [response, setResponse] = useState(null);
   const [error, setError] = useState(null);
   const [currentPage, setCurrentPage] = useState(1);
-  const rowsPerPage = 5;
+  const rowsPerPage = 3;
 
   const handleSubmit = async (e) => {
     e.preventDefault();
