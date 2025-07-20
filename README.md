@@ -1,5 +1,23 @@
 
 
+
+⚠️ **Important Notice:**
+
+After switching to this branch, please run:
+
+    npm install
+
+to ensure all dependencies (including `openai`) are installed.
+
+Also, make sure to update your `.env` file with the OpenAI API key:
+
+    OPENAI_API_KEY="<your_openai_api_key_here>"
+
+See the installation instructions below for more details.
+
+
+
+
 # AI Job Skill Analyzer
 
 This is a full-stack project for Botson.ai's take-home assignment. It includes:
@@ -28,13 +46,6 @@ This is a full-stack project for Botson.ai's take-home assignment. It includes:
 ---
 
 ## ⚙️ Local Setup Instructions
-
-
-⚠️ Note: After switching to this branch, run:
-
-    npm install
-
-To make sure all dependencies (including 'openai') are installed.
 
 
 ### 1. Clone the repository
