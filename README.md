@@ -9,7 +9,7 @@ After switching to this branch, please run:
 
 to ensure all dependencies (including `openai`) are installed.
 
-Also, make sure to update your `.env` file with the OpenAI API key:
+Make sure to update your `.env` file with the OpenAI API key:
 
     OPENAI_API_KEY="<your_openai_api_key_here>"
 
