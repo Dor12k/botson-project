@@ -40,7 +40,6 @@ cd botson-project
 
 ```bash
 npm install
-npm install openai
 ```
 
 Create a .env file in the backend folder:
