@@ -6,6 +6,15 @@ This is a full-stack project for Botson.ai's take-home assignment. It includes:
 - A dashboard to visualize job indexing logs
 - An AI assistant to answer natural language questions about the data
 
+## Screenshots
+
+### Dashboard
+![Dashboard Screenshot](path/to/homepage.png)
+
+### Chat Assistant
+![Chat Assistant Screenshot](path/to/query.png)
+
+
 ## 🧰 Technologies Used
 
 - React 18 (Vite)
